@@ -1,0 +1,14 @@
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   4 weeks ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   4 weeks ago   15.7MB
+
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES
+9ef4c6473bbb   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   3 minutes ago   Up 3 minutes             eager_gagarin
+
+C:\>docker exec -it eager_gagarin sh
+/usr/src/app # tail -f ./text.log
+2021-04-14 14:36:56 +0000 UTC
+2021-04-14 14:36:58 +0000 UTC
+2021-04-14 14:37:00 +0000 UTC
+2021-04-14 14:37:02 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
