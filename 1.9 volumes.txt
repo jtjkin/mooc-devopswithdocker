@@ -1,0 +1,2 @@
+C:\path\to\folder>fsutil file createnew text.log 0
+C:\path\to\folder>docker run -v "%cd%/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
